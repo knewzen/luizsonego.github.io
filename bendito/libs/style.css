@@ -1,0 +1,60 @@
+@media only screen and (max-width: 767px) {
+  .imagemfundo{
+    background: rgba(0, 0, 0, 0) url("../images/hero1.jpg") no-repeat fixed -200px 0 / 190% 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .imagemfundo{
+    background: rgba(0, 0, 0, 0) url("../images/hero1.jpg") no-repeat fixed -200px 0 / 190% 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .imagemfundo{
+    background: rgba(0, 0, 0, 0) url("../images/hero1.jpg") no-repeat fixed 0 0 / 100% 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .imagemfundo{
+    background: rgba(0, 0, 0, 0) url("../images/hero1.jpg") no-repeat fixed 0 0 / 100% 100%;
+  }
+}
+/*.imagemfundo{
+  background: rgba(0, 0, 0, 0) url("../images/hero1.jpg") no-repeat fixed 0 0 / 100% 100%;
+}*/
+
+.navbar .navbar-end a{
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: returnToNormal;
+  animation-name: returnToNormal;
+  /*color:#fff!important;*/
+}
+@-webkit-keyframes returnToNormal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes returnToNormal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
